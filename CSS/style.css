@@ -44,20 +44,20 @@ body {
   border: 2px solid #00bee9;
   outline: none;
   text-align: center;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   scale: 1.1;
 }
 
 .password-input:focus {
-    border-color: #78e6ff;
+  border-color: #78e6ff;
 }
 
 .reasons {
-    margin-top: .8rem;
-    color: rgb(75, 75, 75);
+  margin-top: 0.8rem;
+  color: rgb(75, 75, 75);
 }
 
 .about-text-password {
-    flex: auto;
-    margin-bottom: 2rem;
-  }
+  flex: auto;
+  margin-bottom: 2rem;
+}

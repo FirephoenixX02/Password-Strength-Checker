@@ -33,7 +33,7 @@ function calculatePasswordStrength(password) {
 function lengthWeakness(password) {
   const length = password.length;
 
-  if (length == 0) {
+  if (length === 0) {
     return {
       message: "Enter a Password",
       deduction: 100,
@@ -98,7 +98,7 @@ function specialCharactersWeakness(password) {
 function characterTypeWeakness(password, regex, type) {
   const matches = password.match(regex) || [];
 
-  if (matches.length == 0) {
+  if (matches.length === 0) {
     return {
       message: `Your Password has no ${type}`,
       deduction: 30,
