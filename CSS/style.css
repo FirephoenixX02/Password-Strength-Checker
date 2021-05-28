@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+.strength-meter {
+  position: relative;
+  height: 2rem;
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 1rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.strength-meter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: calc(1% * var(--strength, 0));
+  background-color: #48dbfb;
+  transition: width 200ms;
+}
+
+.password-input {
+  margin-top: 1rem;
+  width: 17%;
+  padding: 0.25rem 0.75rem;
+  color: black;
+  border: 2px solid #00bee9;
+  outline: none;
+  text-align: center;
+  border-radius: .3rem;
+  scale: 1.1;
+}
+
+.password-input:focus {
+    border-color: #78e6ff;
+}
+
+.reasons {
+    margin-top: .8rem;
+    color: rgb(75, 75, 75);
+}
+
+.about-text-password {
+    flex: auto;
+    margin-bottom: 2rem;
+  }
